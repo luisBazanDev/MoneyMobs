@@ -1,0 +1,7 @@
+money-mobs:
+  ZOMBIE:
+    min: 3
+    max: 5
+  SKELETON:
+    min: 3
+    max: 5

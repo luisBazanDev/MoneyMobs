@@ -1,0 +1,8 @@
+name: MoneyMobs
+version: '${project.version}'
+main: pe.bazan.luis.plugins.moneymobs.MoneyMobs
+api-version: 1.19
+prefix: MoneyMobs
+depend: [ Vault, CommandAPI ]
+authors: [ Luis ]
+description: Plugin for the player to earn money when killing a mob
