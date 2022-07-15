@@ -57,4 +57,8 @@ public class MobsManager {
       return max;
     }
   }
+
+  public static HashMap<EntityType, Dropper> getMobs() {
+    return mobs;
+  }
 }
