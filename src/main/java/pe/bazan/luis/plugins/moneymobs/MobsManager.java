@@ -13,13 +13,19 @@ public class MobsManager {
 
   public MobsManager(MoneyMobs moneyMobs) {
     this.plugin = moneyMobs;
+    registerMobs();
   }
 
   public void registerMobs() {
+    plugin.getLogger().info("Register mobs in the config...");
     ConfigurationSection section = plugin.getConfig().getConfigurationSection("money-mobs");
     section.getKeys(false).forEach((mob) -> {
-      mobs.put(EntityType.valueOf(mob), new Dropper(section.getInt(mob + ".min"), section.getInt(mob + ".max")));
+      int min = section.getInt(mob + ".min");
+      int max = section.getInt(mob + ".max");
+      plugin.getLogger().info(String.format("+ Mob register: %s, min: %s$, max: %s$", mob, min, max));
+      mobs.put(EntityType.valueOf(mob), new Dropper(min, max));
     });
+    plugin.getLogger().info("Mobs registered!");
   }
 
   public static Dropper getMobDrop(EntityType type) {
