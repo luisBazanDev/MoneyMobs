@@ -5,16 +5,18 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class MoneyMobs extends JavaPlugin {
-  private Economy econ = null;
+  private Economy econ;
   private MobsManager mobsManager;
 
   @Override
   public void onEnable() {
     // Plugin startup logic
+    getLogger().info("Enabling plugin...");
     saveDefaultConfig();
     this.mobsManager = new MobsManager(this);
     new MobKilledByPlayer(this);
     setupEconomy();
+    getLogger().info("Plugin Enabled");
   }
 
   @Override
@@ -28,6 +30,7 @@ public final class MoneyMobs extends JavaPlugin {
     }
     RegisteredServiceProvider<Economy> rsp = getServer().getServicesManager().getRegistration(Economy.class);
     if (rsp == null) {
+      getLogger().info("Don't provider");
       return false;
     }
     econ = rsp.getProvider();

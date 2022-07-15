@@ -3,6 +3,10 @@ version: '${project.version}'
 main: pe.bazan.luis.plugins.moneymobs.MoneyMobs
 api-version: 1.19
 prefix: MoneyMobs
-depend: [ Vault, CommandAPI ]
+depend:
+  - Vault
+  - CommandAPI
+softdepend:
+  - EconomyPlus
 authors: [ 'Luis Bazán' ]
 description: Plugin for the player to earn money when killing a mob

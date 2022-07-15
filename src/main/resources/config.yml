@@ -1,9 +1,10 @@
 prefix: "&6&lMM &f» "
-format: "&7+%money%$" # %money% is variable
+msg: "&7+%money%$" # %money% is variable
+format: "00.0#" # Default "00.0#"
 
 sound:
   enable: true
-  sound: BLOCK_NOTE_BLOCK_BIT # From this site https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  sound: ENTITY_PLAYER_LEVELUP # From this site https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
   pitch: 2 # values from the 0 to 2
   volume: 1 # values from the 0 to 1
 
