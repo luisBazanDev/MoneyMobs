@@ -14,227 +14,227 @@ sound:
 ##############################################################################
 money-mobs:
   ALLAY:
-    min: 5
-    max: 11
+    min: 1
+    max: 5
   BAT:
-    min: 5
-    max: 11
+    min: 1
+    max: 5
   BEE:
-    min: 5
-    max: 11
+    min: 1
+    max: 5
   BLAZE:
-    min: 5
-    max: 11
+    min: 1
+    max: 5
   CAVE_SPIDER:
-    min: 5
-    max: 11
+    min: 1
+    max: 5
   CHICKEN:
-    min: 5
-    max: 11
+    min: 1
+    max: 5
   COD:
-    min: 5
-    max: 11
+    min: 1
+    max: 5
   COW:
-    min: 5
-    max: 11
+    min: 1
+    max: 5
   CREEPER:
-    min: 5
-    max: 11
+    min: 1
+    max: 5
   DOLPHIN:
-    min: 5
-    max: 11
+    min: 1
+    max: 5
   DONKEY:
     min: 1
-    max: 1
+    max: 5
   DROWNED:
     min: 1
-    max: 1
+    max: 5
   ELDER_GUARDIAN:
     min: 1
-    max: 1
+    max: 5
   ENDER_CRYSTAL:
     min: 1
-    max: 1
+    max: 5
   ENDERMAN:
     min: 1
-    max: 1
+    max: 5
   ENDERMITE:
     min: 1
-    max: 1
+    max: 5
   EVOKER:
     min: 1
-    max: 1
+    max: 5
   FOX:
     min: 1
-    max: 1
+    max: 5
   FROG:
     min: 1
-    max: 1
+    max: 5
   GHAST:
     min: 1
-    max: 1
+    max: 5
   GLOW_SQUID:
     min: 1
-    max: 1
+    max: 5
   GOAT:
     min: 1
-    max: 1
+    max: 5
   GUARDIAN:
     min: 1
-    max: 1
+    max: 5
   HOGLIN:
     min: 1
-    max: 1
+    max: 5
   HORSE:
     min: 1
-    max: 1
+    max: 5
   HUSK:
     min: 1
-    max: 1
+    max: 5
   ILLUSIONER:
     min: 1
-    max: 1
+    max: 5
   IRON_GOLEM:
     min: 1
-    max: 1
+    max: 5
   LLAMA:
     min: 1
-    max: 1
+    max: 5
   MAGMA_CUBE:
     min: 1
-    max: 1
+    max: 5
   MULE:
     min: 1
-    max: 1
+    max: 5
   MUSHROOM_COW:
     min: 1
-    max: 1
+    max: 5
   OCELOT:
     min: 1
-    max: 1
+    max: 5
   PANDA:
     min: 1
-    max: 1
+    max: 5
   PARROT:
     min: 1
-    max: 1
+    max: 5
   PHANTOM:
     min: 1
-    max: 1
+    max: 5
   PIG:
     min: 1
-    max: 1
+    max: 5
   PIGLIN:
     min: 1
-    max: 1
+    max: 5
   PIGLIN_BRUTE:
     min: 1
-    max: 1
+    max: 5
   PILLAGER:
     min: 1
-    max: 1
+    max: 5
   POLAR_BEAR:
     min: 1
-    max: 1
+    max: 5
   PUFFERFISH:
     min: 1
-    max: 1
+    max: 5
   RABBIT:
     min: 1
-    max: 1
+    max: 5
   RAVAGER:
     min: 1
-    max: 1
+    max: 5
   SALMON:
     min: 1
-    max: 1
+    max: 5
   SHEEP:
     min: 1
-    max: 1
+    max: 5
   SHULKER:
     min: 1
-    max: 1
+    max: 5
   SILVERFISH:
     min: 1
-    max: 1
+    max: 5
   SKELETON:
     min: 1
-    max: 1
+    max: 5
   SKELETON_HORSE:
     min: 1
-    max: 1
+    max: 5
   SLIME:
     min: 1
-    max: 1
+    max: 5
   SNOWMAN:
     min: 1
-    max: 1
+    max: 5
   SPIDER:
     min: 1
-    max: 1
+    max: 5
   SQUID:
     min: 1
-    max: 1
+    max: 5
   STRAY:
     min: 1
-    max: 1
+    max: 5
   STRIDER:
     min: 1
-    max: 1
+    max: 5
   TADPOLE:
     min: 1
-    max: 1
+    max: 5
   TRADER_LLAMA:
     min: 1
-    max: 1
+    max: 5
   TRIDENT:
     min: 1
-    max: 1
+    max: 5
   TROPICAL_FISH:
     min: 1
-    max: 1
+    max: 5
   TURTLE:
     min: 1
-    max: 1
+    max: 5
   VEX:
     min: 1
-    max: 1
+    max: 5
   VILLAGER:
     min: 1
-    max: 1
+    max: 5
   VINDICATOR:
     min: 1
-    max: 1
+    max: 5
   WANDERING_TRADER:
     min: 1
-    max: 1
+    max: 5
   WARDEN:
     min: 1
-    max: 1
+    max: 5
   WITCH:
     min: 1
-    max: 1
+    max: 5
   WITHER:
     min: 1
-    max: 1
+    max: 5
   WITHER_SKELETON:
     min: 1
-    max: 1
+    max: 5
   WOLF:
     min: 1
-    max: 1
+    max: 5
   ZOGLIN:
     min: 1
-    max: 1
+    max: 5
   ZOMBIE:
     min: 1
-    max: 1
+    max: 5
   ZOMBIE_HORSE:
     min: 1
-    max: 1
+    max: 5
   ZOMBIE_VILLAGER:
     min: 1
-    max: 1
+    max: 5
   ZOMBIFIED_PIGLIN:
     min: 1
-    max: 1
+    max: 5
