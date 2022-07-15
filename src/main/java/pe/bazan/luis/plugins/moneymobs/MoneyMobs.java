@@ -3,6 +3,7 @@ package pe.bazan.luis.plugins.moneymobs;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
+import pe.bazan.luis.plugins.moneymobs.commands.MoneyMobsCmd;
 
 public final class MoneyMobs extends JavaPlugin {
   private Economy econ;
@@ -15,6 +16,7 @@ public final class MoneyMobs extends JavaPlugin {
     saveDefaultConfig();
     this.mobsManager = new MobsManager(this);
     new MobKilledByPlayer(this);
+    new MoneyMobsCmd(this);
     setupEconomy();
     getLogger().info("Plugin Enabled");
   }

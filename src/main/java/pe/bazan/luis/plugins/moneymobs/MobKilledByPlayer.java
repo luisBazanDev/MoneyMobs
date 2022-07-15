@@ -24,11 +24,12 @@ public class MobKilledByPlayer implements Listener {
 
   @EventHandler
   public void onPlayerKillMob(EntityDeathEvent e) {
-    if(!(e.getEntity().getKiller() instanceof Player))return;
+    if(!(e.getEntity().getKiller() instanceof Player)) return;
     MobsManager.Dropper drop = MobsManager.getMobDrop(e.getEntityType());
     if(drop == null) return;
     LivingEntity entity = e.getEntity();
     final Player player = entity.getKiller();
+    if(!player.hasPermission("moneymobs.drops")) return;
     final double amount = drop.randomizerDouble();
     plugin.getEcon().depositPlayer(player, amount);
     player.sendMessage(ChatColor.translateAlternateColorCodes('&',
