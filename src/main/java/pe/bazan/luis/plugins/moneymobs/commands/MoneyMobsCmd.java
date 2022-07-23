@@ -12,10 +12,11 @@ public class MoneyMobsCmd {
   private  CommandAPICommand credits = new CommandAPICommand("credits")
           .withPermission("moneymobs.command.moneymobs.credits")
           .executesPlayer((sender, args) -> {
-            sender.sendMessage(format("&m====================&6&l Money Mobs &m===================="));
+            sender.sendMessage(format("&f&m=================&6&l Money Mobs &f&m================="));
             sender.sendMessage(format(String.format("&f&lVersion: %s", plugin.getDescription().getVersion())));
+            sender.sendMessage(format(String.format("&f&lAuthors: %s", plugin.getDescription().getAuthors())));
             sender.sendMessage(format("&0&lGit&f&lHub&7: https://github.com/luisBazanDev/MoneyMobs"));
-            sender.sendMessage(format("&m===================================================="));
+            sender.sendMessage(format("&f&m=============================================="));
           });
 
   private  CommandAPICommand reload = new CommandAPICommand("reload")
@@ -33,16 +34,16 @@ public class MoneyMobsCmd {
           .withSubcommand(credits)
           .withSubcommand(reload)
           .executesPlayer((sender, args) -> {
-            sender.sendMessage(format("&m====================&6&l Money Mobs &m===================="));
+            sender.sendMessage(format("&m=================&6&l Money Mobs &f&m================="));
             MobsManager.getMobs().forEach((k, v) -> {
               sender.sendMessage(format(String.format(
-                      "&e- %s: &cmin: %s$ &amax: %s$",
+                      "&e%s: &cmin: %s$ &amax: %s$",
                       k,
                       v.getMin(),
                       v.getMax()
               )));
             });
-            sender.sendMessage(format("&m===================================================="));
+            sender.sendMessage(format("&m=============================================="));
           });
 
   public MoneyMobsCmd(MoneyMobs plugin) {

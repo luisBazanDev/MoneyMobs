@@ -6,7 +6,7 @@
 
     <groupId>pe.bazan.luis.plugins</groupId>
     <artifactId>MoneyMobs</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>MoneyMobs</name>
