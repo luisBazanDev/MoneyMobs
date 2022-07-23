@@ -5,11 +5,13 @@ Money mobs is a minecraft plugin for the player to earn money when killing a mob
 
 ## Permissions
 - `moneymobs.command.moneymobs` - For use /moneymobs command
+- `moneymobs.command.moneymobs.credits` - For use /moneymobs credits
+- `moneymobs.command.moneymobs.reload` - Reaload config of the plugin
 - `moneymobs.drops` - If player don't have this permission, the system don't worked
 
 ## Commands
-- `/moneymobs` - Display low info.
-- `/moneymobs info` - Display all info.
+- `/moneymobs` - Display info of the mobs.
+- `/moneymobs credits` - Display credits of the plugin.
 - `/moneymobs reload` - Reload config of the plugin.
 
 ## Default Config
