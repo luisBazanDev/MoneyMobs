@@ -6,7 +6,7 @@
 
     <groupId>pe.bazan.luis.plugins</groupId>
     <artifactId>MoneyMobs</artifactId>
-    <version>1.0.1</version>
+    <version>1.2.0</version>
     <packaging>jar</packaging>
 
     <name>MoneyMobs</name>
@@ -79,12 +79,6 @@
             <groupId>com.github.MilkBowl</groupId>
             <artifactId>VaultAPI</artifactId>
             <version>1.7</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>dev.jorel</groupId>
-            <artifactId>commandapi-core</artifactId>
-            <version>8.4.1</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

@@ -3,11 +3,13 @@ package pe.bazan.luis.plugins.moneymobs;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
-import pe.bazan.luis.plugins.moneymobs.commands.MoneyMobsCmd;
+import pe.bazan.luis.plugins.moneymobs.commands.BaseCommand;
+import pe.bazan.luis.plugins.moneymobs.utils.MsgFormat;
 
 public final class MoneyMobs extends JavaPlugin {
   private Economy econ;
   private MobsManager mobsManager;
+  private static MoneyMobs instance;
 
   @Override
   public void onEnable() {
@@ -16,14 +18,23 @@ public final class MoneyMobs extends JavaPlugin {
     saveDefaultConfig();
     this.mobsManager = new MobsManager(this);
     new MobKilledByPlayer(this);
-    new MoneyMobsCmd(this);
-    setupEconomy();
+    if (!setupEconomy()) {
+      getLogger().info(MsgFormat.error("You don't have a economy provider, please install a economy plugin and retry :)"));
+      getServer().getPluginManager().disablePlugin(this);
+      return;
+    }
+    loadCommand();
     getLogger().info("Plugin Enabled");
+    instance = this;
   }
 
   @Override
   public void onDisable() {
-    // Plugin shutdown logic
+    getLogger().info(MsgFormat.error("Plugin disabled."));
+  }
+
+  private void loadCommand() {
+    getCommand("moneymobs").setExecutor(new BaseCommand());
   }
 
   private boolean setupEconomy() {
@@ -32,7 +43,7 @@ public final class MoneyMobs extends JavaPlugin {
     }
     RegisteredServiceProvider<Economy> rsp = getServer().getServicesManager().getRegistration(Economy.class);
     if (rsp == null) {
-      getLogger().info("Don't provider");
+      getLogger().info("Don't have a economy provider");
       return false;
     }
     econ = rsp.getProvider();
@@ -45,5 +56,9 @@ public final class MoneyMobs extends JavaPlugin {
 
   public Economy getEcon() {
     return econ;
+  }
+
+  public static MoneyMobs getInstance() {
+    return instance;
   }
 }
