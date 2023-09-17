@@ -31,6 +31,7 @@ public class MobKilledByPlayer implements Listener {
     final Player player = entity.getKiller();
     if(!player.hasPermission("moneymobs.drops")) return;
     final double amount = drop.randomizerDouble();
+    if(amount == 0.0) return;
     plugin.getEcon().depositPlayer(player, amount);
     player.sendMessage(ChatColor.translateAlternateColorCodes('&',
             plugin.getConfig().getString("prefix") +
